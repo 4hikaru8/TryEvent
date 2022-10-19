@@ -3,13 +3,11 @@ import './SearchPage/SearchPage'
 import React from 'react';
 import SearchPage from './SearchPage/SearchPage';
 import reportWebVitals from './reportWebVitals';
-import SubmitButton from './components/SubmitButton';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <SearchPage />
-    <SubmitButton/>
   </React.StrictMode>
 );
 

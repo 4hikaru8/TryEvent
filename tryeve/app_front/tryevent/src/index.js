@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom/client';
 import './SearchPage/SearchPage'
 import React from 'react';
 import SearchPage from './SearchPage/SearchPage';
+import ResultPage from './ResultPage/ResultPage'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

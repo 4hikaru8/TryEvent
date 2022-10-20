@@ -10,10 +10,11 @@
     <h1 th:text="${title}"></h1>
     <p>
         <div th:text="${message}"></div>
+                
         <table>
            
 
-            <tr th:each="event : ${sample3}">
+            <tr th:each="event : ${collabo}">
                 <td th:text="${event}"></td>
             </tr>
            

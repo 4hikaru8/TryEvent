@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,14 @@
     <h1 th:text="${title}"></h1>
     <p>
         <div th:text="${message}"></div>
+        <table>
+           
+
+            <tr th:each="event : ${sample3}">
+                <td th:text="${event}"></td>
+            </tr>
+           
+        </table>
     </p>
 </body>
 </html>

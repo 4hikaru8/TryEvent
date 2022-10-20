@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+
+html {
+  height: 100%;
+}
+
+body {text-align: center;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  background: linear-gradient(90deg, #66ecd8 10%, #83edf388 90%);
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+}
+
+select option {
+  background-color: white;
+  color: gray;
+  width: 310px;
+  padding: 10px 15px;
+  height: 20px;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 1rem 2rem calc(1rem + 10px);
+  background: #0050fb96;
+}
+
+h1:before {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+  top: -7px;
+  left: -7px;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: 4px solid rgb(12, 228, 170);
+}
+
+#title{
+  color: rgb(255, 255, 255);
+  font-size: 65px;
+}
+
+#listBox{
+    background: linear-gradient(-135deg, #e8a363,rgb(250, 64, 234), #e21e24e2);
+color: white;
+border-radius :8px;/*角の丸み*/
+box-shadow :0px 0px 5px silver;/*5px=影の広がり具合*/
+padding: 0.5em 0.5em 0.5em 2em;
+text-align: center;
+position: relative;
+width: 350px;
+margin: 0 auto;
+margin-top: 100px;
+}
+
+

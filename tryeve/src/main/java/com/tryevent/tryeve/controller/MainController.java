@@ -24,30 +24,22 @@ public class MainController {
             Document document = Jsoup.connect("https://kyoto-design.jp/event").get();
             Elements event = document.getElementsByClass("wrap clearfix");
            
-            List<String> sample1 = new ArrayList<String>();
-            List<String> sample2 = new ArrayList<String>();
-            List<String> sample3 = new ArrayList<String>();
+            List<String> titleList = new ArrayList<String>();
+            List<String> dateList = new ArrayList<String>();
+            List<String> collabo = new ArrayList<String>();
             int a = 0;
 
 
             for (Element course : event) {
-                sample1.add(course.getElementsByClass("title").text());
-                sample2.add(course.getElementsByClass("date nowrap").text());
+                titleList.add(course.getElementsByClass("title").text());
+                dateList.add(course.getElementsByClass("date nowrap").text());
 
-                sample3.add(sample1.get(a) +"　開催期間："+ sample2.get(a));
+                collabo.add(titleList.get(a) +"　開催期間："+ dateList.get(a));
                 a++;
             }
 
-            model.addAttribute("sample3", sample3);
-            model.addAttribute("sample1", sample1);
-            model.addAttribute("sample2", sample2);
+            model.addAttribute("collabo", collabo);
            
-
-
-            // for (Element course : event) {
-            //     model.addAttribute("festival", course.getElementsByClass("title").text() + "　　");
-            //     model.addAttribute("date", course.getElementsByClass("date nowrap").text());
-            // }
     
 
         return "hello";

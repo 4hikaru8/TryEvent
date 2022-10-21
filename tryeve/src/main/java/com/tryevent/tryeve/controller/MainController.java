@@ -44,5 +44,9 @@ public class MainController {
 
         return "hello";
     }
+    @RequestMapping("/result")
+    public String resultPage() {
+        return "result";
+    }
      
 }
